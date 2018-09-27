@@ -12,6 +12,7 @@
         <module>eureka-server</module>
         <module>greet-service</module>
         <module>user-service</module>
+        <module>zuul-server</module>
     </modules>
 
     <parent>

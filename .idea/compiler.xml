@@ -11,6 +11,7 @@
         <module name="spring-cloud-demo" />
         <module name="SpringCloudDemo" />
         <module name="user-service" />
+        <module name="zuul-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +20,7 @@
       <module name="spring-cloud-demo" target="1.8" />
       <module name="SpringCloudDemo" target="1.8" />
       <module name="user-service" target="1.8" />
+      <module name="zuul-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
