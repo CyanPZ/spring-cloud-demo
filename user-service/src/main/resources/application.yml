@@ -1,0 +1,15 @@
+server:
+  port: 8764
+
+spring:
+  application:
+    name: user-service
+
+eureka:
+  instance:
+    statusPageUrl: https://${eureka.hostname}:${server.port}/info
+    healthCheckUrl: https://${eureka.hostname}:${server.port}/health
+    homePageUrl: https://${eureka.hostname}:${server.port}/
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
