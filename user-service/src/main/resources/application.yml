@@ -1,5 +1,5 @@
 server:
-  port: 8764
+  port: 8765
 
 spring:
   application:
@@ -7,9 +7,10 @@ spring:
 
 eureka:
   instance:
-    statusPageUrl: https://${eureka.hostname}:${server.port}/info
-    healthCheckUrl: https://${eureka.hostname}:${server.port}/health
-    homePageUrl: https://${eureka.hostname}:${server.port}/
+    hostname: localhost
+    statusPageUrl: http://${eureka.instance.hostname}:${server.port}/actuator/info
+    healthCheckUrl: http://${eureka.instance.hostname}:${server.port}/actuator/health
+    homePageUrl: http://${eureka.instance.hostname}:${server.port}/
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
